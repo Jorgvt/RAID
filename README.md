@@ -103,7 +103,7 @@ The following figure shows the perceptual scale curves for each distortion type 
 
 <p align="center">
   <img src="Figures/figure_refs.png" width="45%" alt="MLDS trial">
-  <img src="Figures/figure_3_mlds_curves.png" width="45%" alt="MLDS curves">
+  <img src="Figures/figure_3_mlds_curves.jpg" width="45%" alt="MLDS curves">
 </p>
 
 As distortion level increases:
