@@ -1,9 +1,9 @@
 
-# RAID: Human Responses to Affine Image Distortions
+# RAID: Human Responses to Affine Image Distortions and Gaussian noise
 
 This repository contains the data, code, and usage examples related to the article:
 
-**RAID-Database: Human Responses to Affine Image Distortions**  
+**RAID-Dataset: human responses to affine image distortions and Gaussian noise**  
 Paula Daudén-Oliver*, David Agost-Beltran, Emilio Sansano-Sansano, Raúl Montoliu, Valero Laparra, Jesús Malo, Marina Martínez-García  (under review).
 
 ---
@@ -19,13 +19,13 @@ Subjective responses were collected using the psychophysical method **Maximum Li
 ## 📂 Repository Structure
 
 - `answers.csv`: Raw experimental data (individual responses from observers).
-- `responses.csv`: MLDS response curves per image, distortion, and distortion level (normalized).
+- `responses.csv`: MLDS perceptual scale curves per image, distortion, and distortion level (normalized).
 - `images/`: Original and distorted images (available via [HuggingFace](https://huggingface.co/)).
 - `Notebooks/`:
   - `Load_DDBB_example.ipynb` <a target="_blank" href="https://colab.research.google.com/github/paudauo/BBDD_Affine_Transformations/blob/main/Notebooks/Load_DDBB_example.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>: Load images and responses.
   - `Load_RAW_data_and_compute_MLDS.ipynb` <a target="_blank" href="https://colab.research.google.com/github/paudauo/BBDD_Affine_Transformations/blob/main/Notebooks/Load_RAW_data_and_compute_MLDS.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>: Compute MLDS curves from raw data.
-  - `Load_MLDS_data_and_plot_curves.ipynb` <a target="_blank" href="https://colab.research.google.com/github/paudauo/BBDD_Affine_Transformations/blob/main/Notebooks/Load_MLDS_data_and_plot_curves.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>: Plot normalized response curves.
-  - `Convert_MLDS_to_MOS.ipynb` <a target="_blank" href="https://colab.research.google.com/github/paudauo/BBDD_Affine_Transformations/blob/main/Notebooks/Convert_MLDS_to_MOS.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>: Convert MLDS responses to MOS (aligned with TID2013).
+  - `Load_MLDS_data_and_plot_curves.ipynb` <a target="_blank" href="https://colab.research.google.com/github/paudauo/BBDD_Affine_Transformations/blob/main/Notebooks/Load_MLDS_data_and_plot_curves.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>: Plot normalized curves.
+  - `Convert_MLDS_to_MOS.ipynb` <a target="_blank" href="https://colab.research.google.com/github/paudauo/BBDD_Affine_Transformations/blob/main/Notebooks/Convert_MLDS_to_MOS.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>: Convert MLDS curves to MOS (aligned with TID2013).
   - `Load_RAW_data_and_plot_left_right_RT.ipynb` <a target="_blank" href="https://colab.research.google.com/github/paudauo/BBDD_Affine_Transformations/blob/main/Notebooks/Load_RAW_data_and_plot_left_right_RT.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>: Analyze reaction times and decision patterns.
 
 ---
@@ -97,9 +97,9 @@ A total of **210 observers** completed over **40,000 trials**, under controlled 
 
 ---
 
-### 📈  MLDS Response Curves
+### 📈  MLDS Perceptual Scales 
 
-The following figure shows the perceptual response curves for each distortion type (**rotation**, **translation**, **scaling**, and **Gaussian noise**), computed using the **Maximum Likelihood Difference Scaling (MLDS)** method.
+The following figure shows the perceptual scale curves for each distortion type (**rotation**, **translation**, **scaling**, and **Gaussian noise**), computed using the **Maximum Likelihood Difference Scaling (MLDS)** method.
 
 <p align="center">
   <img src="Figures/figure_refs.png" width="45%" alt="MLDS trial">
@@ -107,7 +107,7 @@ The following figure shows the perceptual response curves for each distortion ty
 </p>
 
 As distortion level increases:
-- **Affine distortions** (rotation, translation, scaling) show an approximately **linear perceptual response**.
-- **Gaussian noise** exhibits a **saturating response**, aligning with established perceptual models.
+- **Affine distortions** (rotation, translation, scaling) show an approximately **linear perceptual curves**.
+- **Gaussian noise** exhibits a **saturating behaviour**, aligning with established perceptual models.
 
 ---
