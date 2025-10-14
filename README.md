@@ -80,7 +80,7 @@ The dataset is released under the **Creative Commons Attribution 4.0 Internation
 
 If you use this dataset or code, please cite the corresponding article (when available). In the meantime, you may reference it as:
 
-> Daudén-Oliver, P. et al. *RAID-Database: Human Responses to Affine Image Distortions*. Scientific Data (under review). GitHub: https://github.com/paudauo/BBDD_Affine_Transformations
+> Daudén-Oliver, P. et al. *RAID: Human Responses to Affine Image Distortions and Gaussian noise*. Scientific Data (under review). GitHub: https://github.com/paudauo/BBDD_Affine_Transformations
 
 
 ---
