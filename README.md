@@ -19,7 +19,7 @@ Subjective responses were collected using the psychophysical method **Maximum Li
 ## 📂 Repository Structure
 
 - `answers.csv`: Raw experimental data (individual responses from observers).
-- `responses.csv`: MLDS perceptual scale curves per image, distortion, and distortion level (normalized).
+- `perceptual_scales.csv`: MLDS perceptual scale curves per image, distortion, and distortion level (normalized).
 - `images/`: Original and distorted images (available via [HuggingFace](https://huggingface.co/)).
 - `Notebooks/`:
   - `Load_DDBB_example.ipynb` <a target="_blank" href="https://colab.research.google.com/github/paudauo/BBDD_Affine_Transformations/blob/main/Notebooks/Load_DDBB_example.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>: Load images and responses.
