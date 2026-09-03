@@ -19,7 +19,14 @@ Subjective responses were collected using the psychophysical method **Maximum Li
 ## 📂 Repository Structure
 
 - `answers.csv`: Raw experimental data (individual responses from observers).
-- `perceptual_scales.csv`: MLDS perceptual scale curves per image, distortion, and distortion level (normalized).
+- `perceptual_scales.csv`: MLDS perceptual scale curves per image, distortion, and distortion level (normalized, with MOS and JOD).
+- `raid_jod.csv`: Standalone dataset of RAID conditions with MLDS metrics, MOS, and JOD scores.
+- `tid2013_jod.csv`: Standalone dataset of TID2013 conditions with MOS and JOD scores.
+- `raid_tid2013_aligned.csv`: Unified dataset combining RAID (960 conditions) and TID2013 (3,000 conditions) on an aligned JOD scale.
+- `shared_gn_raid_tid2013.csv`: Direct side-by-side comparison of the 96 shared Gaussian noise conditions between RAID and TID2013.
+- `MLDS_to_JOD.md`: Theoretical and mathematical guide on MLDS scaling, internal decision noise, and derivation of JOD values.
+- `BENCHMARKING_METRICS_WITH_JOD.md`: Practical guide and Python code for benchmarking pretrained IQA metrics in JOD units using 4-parameter logistic calibration.
+- `CALIBRATION_METHODOLOGY_AND_METRIC_BIAS.md`: Methodological guide on human JOD scale invariance vs. metric distortion biases and calibration dataset choice.
 - `images/`: Original and distorted images (available via [HuggingFace](https://huggingface.co/)).
 - `Notebooks/`:
   - `Load_DDBB_example.ipynb` <a target="_blank" href="https://colab.research.google.com/github/paudauo/BBDD_Affine_Transformations/blob/main/Notebooks/Load_DDBB_example.ipynb"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>: Load images and responses.
